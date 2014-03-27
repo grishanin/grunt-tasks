@@ -1,0 +1,11 @@
+templates:
+  - 'clean:prebuild'
+  - 'handlebars:compile'
+  - 'rewrite:templates'
+
+concat-templates:
+  - 'templates'
+  - 'concat'
+
+default:
+  - 'concat-templates'
